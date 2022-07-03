@@ -18,7 +18,9 @@ public class HelloController
 //        List<String> ls = new  ArrayList<>();
 //        ls.add("abc");
         String resultString = "{\n" +
-                "\t\"name\":\"lwenjim\"\n" +
+                "\t\"data\":{\n" +
+                "\t\t\"name\":\"lwenjim\"\n" +
+                "\t}\n" +
                 "}";
         response.setContentType("application/json");
         response.getWriter().write(resultString);
